@@ -25,7 +25,8 @@ jobs:
           helm dependency update chart
 
       - name: Run chart-releaser
-        uses: patuf/chart-releaser-action@main
+        # uses: patuf/chart-releaser-action@main
+        uses: /chart-releaser-action@v1.2.1
         with:
           charts_dir: .
         env:
