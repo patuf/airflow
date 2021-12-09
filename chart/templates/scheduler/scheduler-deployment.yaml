@@ -101,6 +101,9 @@ spec:
       securityContext:
         runAsUser: {{ .Values.uid }}
         fsGroup: {{ .Values.gid }}
+        {{- if .Values.fsGroupChangePolicy }}
+        fsGroupChangePolicy: {{ .Values.fsGroupChangePolicy }}
+        {{- end }}
       {{- if or .Values.registry.secretName .Values.registry.connection }}
       imagePullSecrets:
         - name: {{ template "registry_secret" . }}

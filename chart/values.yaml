@@ -32,6 +32,9 @@ kubeVersionOverride: ""
 uid: 50000
 gid: 0
 
+# Whether eligible mounted volumes will always undergo a full recursive chown ("Always"), or only when the root owner group isn't .Values.gid ("OnRootMismatch")
+fsGroupChangePolicy: "Always"
+
 # Airflow home directory
 # Used for mount paths
 airflowHome: /opt/airflow
