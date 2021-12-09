@@ -26,7 +26,7 @@ jobs:
 
       - name: Run chart-releaser
         # uses: patuf/chart-releaser-action@main
-        uses: /chart-releaser-action@v1.2.1
+        uses: helm/chart-releaser-action@v1.2.1
         with:
           charts_dir: .
         env:
