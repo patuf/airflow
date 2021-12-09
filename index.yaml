@@ -29,4 +29,32 @@ entries:
     urls:
     - https://github.com/patuf/airflow/releases/download/airflow-1.4.1-dev/airflow-1.4.1-dev.tgz
     version: 1.4.1-dev
-generated: "2021-12-09T23:08:38.64884595Z"
+  - apiVersion: v2
+    appVersion: 2.2.2
+    created: "2021-12-09T23:47:04.868422089Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.5.3
+    description: The official Helm chart to deploy Apache Airflow, a platform to programmatically
+      author, schedule, and monitor workflows
+    digest: 4f2d47ea27f6bd087e4e368bc10c5302da84799219c74263da567267967b14b8
+    home: https://airflow.apache.org/
+    icon: https://airflow.apache.org/docs/apache-airflow/stable/_images/pin_large.png
+    keywords:
+    - apache
+    - airflow
+    - workflow
+    - scheduler
+    maintainers:
+    - email: dev@airflow.apache.org
+      name: Apache Airflow PMC
+    name: airflow
+    sources:
+    - https://github.com/apache/airflow
+    type: application
+    urls:
+    - https://github.com/patuf/airflow/releases/download/airflow-1.4.0-dev/airflow-1.4.0-dev.tgz
+    version: 1.4.0-dev
+generated: "2021-12-09T23:47:04.868436389Z"
